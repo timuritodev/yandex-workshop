@@ -5,6 +5,7 @@ import { Layout } from './it-events-template/src/Layout/Layout';
 import MainPage from "./pages/MainPage/MainPage";
 import './index.css'
 import SearchPage from './pages/SearchPage/SearchPage';
+import FavoritePage from './pages/FavoritePage/FavoritePage';
 
 const Root = () => {
   return (
@@ -13,6 +14,7 @@ const Root = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/favorites" element={<FavoritePage />} />
         </Route>
       </Routes>
     </div>
