@@ -3,6 +3,7 @@ import { LeftFilterBar } from "../../it-events-template/src/components/LeftFilte
 import { CardList } from "../../it-events-template/src/components/CardList/CardList";
 import { useEventsContext } from "../../it-events-template/src/utils/context/EventsContext";
 import useIsMobileResolution from "../../it-events-template/src/utils/hooks/useIsMobileResolution";
+import { TopFilterBar } from "../../it-events-template/src/components/TopFilterBar/TopFilterBar";
 
 export default function SearchPage() {
     const { recommendedEvents } = useEventsContext();
@@ -15,13 +16,16 @@ export default function SearchPage() {
     return (
         <section className='search__container'>
             <LeftFilterBar />
-            <CardList
-                title=""
-                listDirection="col"
-                cardDirection="row"
-                style={{ gap: "22px" }}
-                events={recommended}
-            />
+            <div className='search__box'>
+                <TopFilterBar />
+                <CardList
+                    title=""
+                    listDirection="col"
+                    cardDirection="row"
+                    style={{ gap: "22px" }}
+                    events={recommended}
+                />
+            </div>
         </section>
     )
 }

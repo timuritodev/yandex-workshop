@@ -4,7 +4,7 @@ import { events } from "../../it-events-template/src/utils/events"
 export default function MainPage() {
     return (
         <section className=''>
-            <Event selectedEvent={events[4]} />
+            <Event selectedEvent={events[1]} />
         </section>
     )
 }
