@@ -6,6 +6,7 @@ import MainPage from "./pages/MainPage/MainPage";
 import './index.css'
 import SearchPage from './pages/SearchPage/SearchPage';
 import FavoritePage from './pages/FavoritePage/FavoritePage';
+import EventsPage from './pages/EventsPage/EventsPage';
 
 const Root = () => {
   return (
@@ -15,6 +16,7 @@ const Root = () => {
           <Route index element={<MainPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/favorites" element={<FavoritePage />} />
+          <Route path="/events/:id" element={<EventsPage />} />
         </Route>
       </Routes>
     </div>
