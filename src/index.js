@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from "it-events-frontend";
-import MainPage from "./pages/MainPage/MainPage";
+import ResultPage from "./pages/ResultPage/ResultPage";
 import './index.css'
-import SearchPage from './pages/SearchPage/SearchPage';
+import MainPage from './pages/MainPage/MainPage';
 import FavoritePage from './pages/FavoritePage/FavoritePage';
 import EventsPage from './pages/EventsPage/EventsPage';
 
@@ -13,10 +13,10 @@ const Root = () => {
     <div className="page">
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/* <Route index element={<MainPage />} /> */}
-          <Route index element={<SearchPage />} />
+          <Route index element={<MainPage />} />
           <Route path="/favorites" element={<FavoritePage />} />
           <Route path="/events/:id" element={<EventsPage />} />
+          <Route path="/results" element={<ResultPage />} />
         </Route>
       </Routes>
     </div>
