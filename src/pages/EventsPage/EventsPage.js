@@ -1,15 +1,25 @@
 import { Event } from "it-events-frontend";
-// import { events } from "../../it-events-template/src/utils/events"
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import { useEventsContext } from "it-events-frontend";
+import { apiEvents } from "it-events-frontend";
+
 
 export default function EventsPage() {
-    const { id } = useParams();
-    const { popularEvents } = useEventsContext();
+    // const { id } = useParams();
+    const { selectedEvent, setSelectEvent  } = useEventsContext();
+
+    const fetchSelectedEvent = async (id) => {
+        try {
+          const data = await apiEvents.getSelectedEvent(id);
+          setSelectEvent(data)
+        } catch (error) {
+             console.error("Ошибка при выполнении запроса:", error);
+        }
+      };
 
     return (
         <section className=''>
-            <Event selectedEvent={popularEvents[id]} />
+            <Event selectedEvent={selectedEvent} />
         </section>
     )
 }
