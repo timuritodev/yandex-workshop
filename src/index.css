@@ -12,7 +12,6 @@ code {
     monospace;
 }
 
-/* div {
-  display: flex;
-  align-items: f;
-} */
+section {
+  align-self: flex-start;
+}
