@@ -11,7 +11,6 @@ export default function MainPage() {
         <section className='search__container'>
             <LeftFilterBar />
             <div className='search__box'>
-                <TopFilterBar />
                 <CardList
                     title=""
                     listDirection="col"
