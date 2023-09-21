@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from './it-events-template/src/Layout/Layout';
+import { Layout } from "it-events-frontend";
 import MainPage from "./pages/MainPage/MainPage";
 import './index.css'
 import SearchPage from './pages/SearchPage/SearchPage';
