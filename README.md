@@ -10,6 +10,14 @@
 4. Установите зависимости:  
    `npm install`
 
+### Запуск проекта:
+```bash
+
+npx start — запускает приложенияв. Откройте http://localhost:3000 , чтобы просмотреть его в браузере.
+
+npm run build — сборка приложения в папку build.
+```
+
 ### [Storybook](https://fenixdeveloper.github.io/it-events-template/?path=/docs/components-sortbar--docs)
 ### [Макет Figma](https://www.figma.com/file/ItprGXAa7h0J129f95U3bN/V.1_Cut?type=design&node-id=3-19&mode=design&t=o8yM8nxKVgk3eKY4-0)
 
