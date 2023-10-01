@@ -34,6 +34,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://timuritodev.github.io/yandex-workshop/",
   "browserslist": {
     "production": [
       ">0.2%",
